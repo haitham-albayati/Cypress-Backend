@@ -6,6 +6,7 @@ module.exports = defineConfig({
   viewportHeight: 1080,
   viewportWidth: 1920,
   env: {
+    baseUrl: 'https://api.techglobal-training.com/students',
     oracleDB: {
       user: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
@@ -38,6 +39,6 @@ module.exports = defineConfig({
         },
       });
     },
-  
+    baseUrl: process.env.BASE_URL
   },
 });
